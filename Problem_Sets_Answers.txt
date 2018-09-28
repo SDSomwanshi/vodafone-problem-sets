@@ -1,0 +1,38 @@
+Question 2.
+
+	Essential features to be provided :
+	1. Should be able to access Admin policies
+	2. 
+
+	Technology stack should be :
+
+	Fraework :
+	Spring boot with micro services :
+		- Its easy to maintain and debug the code by policy wise as we create policy wise micro services
+		- Spring boot offering faster as well as widely accessible ‘Getting Started’ experience for the majority of the Spring development.
+		  Also, it reduces Developer’s effort
+		- It makes it easier to integrate the Spring Boot Application with the Spring Ecosystem that majorly includes Spring ORM, Spring JDBC,  
+		  Spring Security, Spring Data and many other things.
+		- It tests the web applications easily with the help of different Embedded HTTP servers that includes Tomcat, Jetty and many others.
+		- It offers a number of plugins for working with embedded and in-memory databases easily.
+	Database :
+		MySql :
+		As its open source.
+	UI :
+		Angular JS 2.0 or above :
+		- As AngularJS 2.0 stress more on browsers like IE10/11, Chrome, Firefox, Opera & Safari on the desktop and Chrome on Android, Windows Phone 8+, iOS6 & Firefox mobile.
+		- Strong and Flexible Routing
+		- Reduction of Code
+		and many more
+
+	Implementation overview :
+		- Will create separate microservices for every policy and using them in main service
+		- Will host it on cloud like AWS as it support best scalability and better cluster
+		- Will maintain jenkins to continuous build cycle
+		- Will provide Sonar cube and cobertura for better code coverage
+		
+Question 3. Do you take interest in reading technical books or articles, blogs?
+	Yes I am.
+	Recently I read Spring Data MongoDB article and blogs.
+	I have implemented it in my current project.
+	Ref: https://spring.io/guides/gs/accessing-mongodb-data-rest/

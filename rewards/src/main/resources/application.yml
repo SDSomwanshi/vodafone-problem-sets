@@ -1,0 +1,20 @@
+server:
+  tomcat:
+    accesslog:
+      directory: /dist/logs/tomcat
+      enabled: true
+      prefix: access_log
+      rename-on-rotate: false
+      suffix: .log
+      pattern: "%{E M/d/y @ hh:mm:ss.S a z}t %a (%{X-Forwarded-For}i) > %A:%p \"%r\" %{requestBodyLength}r %D %s %B %I \"%{Referer}i\" \"%{User-Agent}i\" %u %{username}s %{sessionTracker}s"
+  port: 8080
+  servlet:
+    context-path: /v1-beta/
+spring:
+   application:
+     name: vodafone
+
+app: 
+  service-endpoints: 
+    vouchers-service: http://localhost:8082/v1-beta/api/vouchers
+    credit-service: http://localhost:8081/v1-beta/api/credits
